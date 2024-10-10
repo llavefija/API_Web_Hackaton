@@ -28,7 +28,7 @@ public class UsuariController {
         return usuariService.obtenirUsuaris();
     }
 
-    // Obte la informacio de un usuari especific per la ID
+    // Obté la informació de un usuari especific per la ID
     @GetMapping("/users/{id}")
     public Optional<UsuariModel> obtenirUsuariID(@PathVariable("id") Long id){
         return usuariService.obtenirUsuariID(id);
